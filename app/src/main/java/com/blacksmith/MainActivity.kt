@@ -1,7 +1,9 @@
 package com.blacksmith
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.widget.Button
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,5 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        addBtn.setOnClickListener()
     }
+}
+
+private fun Button.setOnClickListener() {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }
