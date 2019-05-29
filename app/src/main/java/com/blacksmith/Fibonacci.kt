@@ -3,12 +3,12 @@ package com.blacksmith
 fun main(args: Array<String>) {
 
     // ::::::::::: Up to limit int
-    val limit = 21
+    val limit = 34
     var n0 = 0
     var n1 = 1
 
     print("Until $limit: ")
-    while (n0<= limit) {
+    while (n0 <= limit) {
         print("$n0 + ")
 
         val sum = n0 + n1
@@ -31,4 +31,12 @@ fun main(args: Array<String>) {
         f0 = f1
         f1 = sum
     }
+
+    println("")
+    fun fibonacciSequence(): Sequence<Int> {
+        return generateSequence(Pair(0, 1), { Pair(it.second, it.first + it.second) }).map { it.first }
+    }
+
+    println("Sequence: " + fibonacciSequence().take(10).toList())
 }
+
