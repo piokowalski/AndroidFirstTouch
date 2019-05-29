@@ -1,7 +1,6 @@
 package com.blacksmith
 
 fun main(args: Array<String>) {
-
     // ::::::::::: Up to limit int
     val limit = 34
     var n0 = 0
@@ -16,9 +15,9 @@ fun main(args: Array<String>) {
         n1 = sum
     }
 
+
     println(" ")
     // ::::::::::: With for loop
-
     val n = 10
     var f0 = 0
     var f1 = 1
@@ -32,11 +31,23 @@ fun main(args: Array<String>) {
         f1 = sum
     }
 
-    println("")
+
+    println(" ")
+    // ::::::::::: With Sequence feature
     fun fibonacciSequence(): Sequence<Int> {
         return generateSequence(Pair(0, 1), { Pair(it.second, it.first + it.second) }).map { it.first }
     }
-
     println("Sequence: " + fibonacciSequence().take(10).toList())
+
+
+    // ::::::::::: Recursive
+    fun fibonacciRecursive(n: Int): Int{
+
+        if (n==1 || n==2)
+            return 1
+        else
+            return fibonacciRecursive(n-2) + fibonacciRecursive(n-1)
+    }
+    println("Recursive method: " + (fibonacciRecursive(9)))
 }
 
