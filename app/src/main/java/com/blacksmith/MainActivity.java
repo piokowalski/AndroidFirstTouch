@@ -26,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNum.getText().toString());
-                int result = num1 + num2;
+                int result = num1 * 0.3048; //feet to meters
 
                 resultTextView.setText(result + "");
             }
         });
     }
 }
+//https://www.youtube.com/watch?v=aJAS3r-OvYQ
