@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNum.getText().toString());
-                int result = num1 * 0.3048; //feet to meters
+                double result = num1 * 0.3048; //feet to meters
 
                 resultTextView.setText(result + "");
             }
