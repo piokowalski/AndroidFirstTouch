@@ -8,7 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.logging.Logger;
+
 public class MainActivity extends AppCompatActivity {
+    public static final Logger LOG = Logger.getLogger("global");
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
                 EditText secondNum = (EditText) findViewById(R.id.secondNum);
                 TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
 
+                LOG.info("Method started");
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNum.getText().toString());
                 int result = num1 + num2;
-
 
                 resultTextView.setText(result + "");
             }
