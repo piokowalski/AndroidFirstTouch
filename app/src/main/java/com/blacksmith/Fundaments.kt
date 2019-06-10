@@ -25,6 +25,12 @@ fun main(args: Array<String>) {
 
     println("Hello!"+escapedString)
     //Escaped string adding extra space below
-    println("Hey!!"+rawString)
+    println("Hey!!"+rawString+"\n")
+
+    //Arrays
+
+    val numbers: IntArray = intArrayOf(1, 2, 3, 4, 5)
+    println("Hey!! I am array "+numbers[2])
+
 
 }
