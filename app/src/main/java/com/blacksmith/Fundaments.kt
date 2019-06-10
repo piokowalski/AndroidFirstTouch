@@ -21,9 +21,10 @@ fun main(args: Array<String>) {
     //Strings
 
     var rawString : String  = "I am Raw String!"
-    val escapedString : String  = "I am escaped String!\n"
+    val escapedString : String  = "I am escaped String!\nHowdy!"
 
     println("Hello!"+escapedString)
+    //Escaped string adding extra space below
     println("Hey!!"+rawString)
 
 }
