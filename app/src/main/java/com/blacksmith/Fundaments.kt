@@ -45,4 +45,16 @@ fun main(args: Array<String>) {
 
     val strings = hashSetOf("a", "b", "c", "c")
     println("My Set Values are "+strings+"\n")
+
+    //Ranges
+
+    val i:Int  = 11
+    for (j in 1..4)
+        println(j) // prints "1234"
+
+    if (i in 1..10) { // equivalent of 1 < = i && i < = 10
+        println("Your number is: "+i)
+    }               else {
+        println("Your number is not in a range :(")
+    }
 }
