@@ -18,4 +18,12 @@ fun main(args: Array<String>) {
 
     println(data2)
 
+    //Strings
+
+    var rawString : String  = "I am Raw String!"
+    val escapedString : String  = "I am escaped String!\n"
+
+    println("Hello!"+escapedString)
+    println("Hey!!"+rawString)
+
 }
