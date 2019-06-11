@@ -57,4 +57,20 @@ fun main(args: Array<String>) {
     }               else {
         println("Your number is not in a range :(")
     }
+
+    //if - else syntax
+
+    fun ifElse() {
+            val a:Int = 5
+            val b:Int = 2
+            var max: Int
+
+            if (a > b) {
+                max = a
+            } else {
+                max = b
+            }
+            print("Maximum of a or b is " +max+"\n")
+    }
+    println(ifElse())
 }
