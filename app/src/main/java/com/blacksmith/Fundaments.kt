@@ -73,4 +73,12 @@ fun main(args: Array<String>) {
             print("Maximum of a or b is " +max+"\n")
     }
     println(ifElse())
+
+    //lambda
+
+    val myLambda :(String)->Unit  = {
+        s:String->print(s)
+    }
+    val v:String = "First Kotlin lambda."
+    myLambda(v)
 }
