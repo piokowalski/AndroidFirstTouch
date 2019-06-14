@@ -79,8 +79,13 @@ fun main(args: Array<String>) {
     val myLambda :(String)->Unit  = {
         s:String->print(s)
     }
-    val v:String = "First Kotlin lambda."
+    val v:String = "First Kotlin lambda."+"\n"
     myLambda(v)
+
+    //creating an object of TutorialClass class
+
+    val obj = Human()
+    obj.printer()
 
 
 

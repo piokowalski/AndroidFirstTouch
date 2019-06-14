@@ -1,6 +1,6 @@
 package com.blacksmith
 
-class Human(val firstName: String, var age:Int) {
+class Human {
 
     private var name: String = " ma kota."
 
