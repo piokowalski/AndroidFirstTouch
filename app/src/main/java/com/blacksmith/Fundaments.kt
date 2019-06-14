@@ -81,4 +81,7 @@ fun main(args: Array<String>) {
     }
     val v:String = "First Kotlin lambda."
     myLambda(v)
+
+
+
 }
