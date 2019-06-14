@@ -93,5 +93,7 @@ fun main(args: Array<String>) {
 
     println("First Name = ${person1.firstName}")
     println("Age = ${person1.age}")
+    //secondary constructor
+    println("${person1.message}")
 
 }
