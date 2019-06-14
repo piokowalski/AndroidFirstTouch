@@ -1,4 +1,4 @@
 package com.blacksmith
 
-class Person(val firstName:String, var Age:Int) {
+class Person(val firstName:String, var age:Int) {
 }

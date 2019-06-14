@@ -87,6 +87,11 @@ fun main(args: Array<String>) {
     val obj = Human()
     obj.printer()
 
+    //constructor (class Person)
 
+    val person1 = Person("Tutorial",1)
+
+    println("First Name = ${person1.firstName}")
+    println("Age = ${person1.age}")
 
 }
